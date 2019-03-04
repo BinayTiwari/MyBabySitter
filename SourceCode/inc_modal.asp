@@ -4,10 +4,10 @@
       <div class="modal-content">
         <div class="modal-header  pt-0 pb-0">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h3 class="text-theme-colored mt-0 pt-5"> הרשמה </h3>
+    <h3 class="text-theme-colored mt-0 pt-5"><%=LangText("joinforfree","inc_modal.asp")%></h3>
         </div>
         <div class="modal-body">
-<!--START Modal content REGISTRATION-->
+<!--START Modal content REGISTRATION-->registeredentry
     <p>נרשמתם כבר ? <a href="" title="ליחצו כאן לכניסה"  data-dismiss="modal"  data-toggle="modal" data-target="#myModalLogin" ><span class="text-theme-color-2">ליחצו כאן לכניסה</span></a></p>
     <hr />
     <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">היכנסו באמצעות פייסבוק<i class="fa fa-facebook mr-20"></i></button>
