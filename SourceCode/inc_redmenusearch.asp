@@ -19,11 +19,11 @@
                  <div class="col-md-5 text-right sm-mb-0">
  
                      
-                  <a href="" class="text-white" data-toggle="modal" data-target="#myModalLogin"><%Response.Write(LangText("login","inc_modal.asp"))%></a> | 
-                  <a href="" class="text-white"  data-toggle="modal" data-target="#myModalReg"><%Response.Write(LangText("clicktoregister","inc_modal.asp"))%></a> | 
+                  <a href="" class="text-white" data-toggle="modal" data-target="#myModalLogin"><%Response.Write(LangText("login","inc_redmenusearch.asp"))%></a> | 
+                  <a href="" class="text-white"  data-toggle="modal" data-target="#myModalReg"><%Response.Write(LangText("clicktoregister","inc_redmenusearch.asp"))%></a> | 
 
-                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="<%Response.Write(LangText("publishanad","inc_modal.asp"))%>">
-                    <a href="nid_adpageAddEdit.asp" class="text-white" ><%Response.Write(LangText("publishanad","inc_modal.asp"))%></a></button> 
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="<%Response.Write(LangText("publishanad","inc_redmenusearch.asp"))%>">
+                    <a href="nid_adpageAddEdit.asp" class="text-white" ><%Response.Write(LangText("publishanad","inc_redmenusearch.asp"))%></a></button> 
                       
                       </div>
 <!-- END login\register -->
@@ -34,9 +34,9 @@
     <div class="panel-title bg-theme-color-2"> <a class="collapsed" data-parent="#accordion1" data-toggle="collapse" href="#accordion12" aria-expanded="false"> <span class="open-sub"></span>+</a> </div>
     <div id="accordion12" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
       <div class="panel-content  bg-theme-color-2">
-        <p><%Response.Write(LangText("registernow","inc_modal.asp"))%> !!</p>
+        <p><%Response.Write(LangText("registernow","inc_redmenusearch.asp"))%> !!</p>
           
-               <a href="" class="text-white"  ><%Response.Write(LangText("hellouser","inc_modal.asp"))%> ~User Fname~<br><%Response.Write(LangText("logoutnow","inc_modal.asp"))%></a> <br>
+               <a href="" class="text-white"  ><%Response.Write(LangText("hellouser","inc_redmenusearch.asp"))%> ~User Fname~<br><%Response.Write(LangText("logoutnow","inc_redmenusearch.asp"))%></a> <br>
           
                   <a href="" class="text-white" ><img src="images/flags/israel.png" width="10%" alt="עברית"  data-toggle="tooltip" data-placement="bottom" title="עברית"/> | </a> 
                 <a href="" class="text-white " ><img src="images/flags/UnitedStates.png" width="10%" alt="English"  data-toggle="tooltip" data-placement="bottom" title="English" /> | </a> 
@@ -52,7 +52,7 @@
                       
  
           <div class="col-md-2 hidden-sm hidden-xs text-white"><!-- PROMO-CENTER Free Registration -->
-                 ההרשמה בחינם !!
+                 <%Response.Write(LangText("registernow","inc_redmenusearch.asp"))%> !!
            </div>
  
  
@@ -68,12 +68,12 @@
            
 <!-- START Current loged user img -->
               <div class="col-md-1 p-0">
-<a href="#"><img src="PhotoGivNid/2/2.jpg" alt="userName"  id="topimg" class="pt-5 " data-toggle="tooltip" data-placement="bottom" title="userName" /></a></div>
+<a href="#"><img src="PhotoGivNid/2/2.jpg" alt="~userName~"  id="topimg" class="pt-5 " data-toggle="tooltip" data-placement="bottom" title="~userName~" /></a></div>
  <!-- END Current loged user img -->
 
  <!-- START Current loged user Name + Logout link -->
              <div class="col-md-6 text-left">
-                <a href="" class="text-white"  >Hello User ~Fname~<br>LogOut</a> 
+                <a href="" class="text-white"  ><%Response.Write(LangText("hellouser","inc_redmenusearch.asp"))%> ~User Fname~<br><%Response.Write(LangText("logoutnow","inc_redmenusearch.asp"))%></a> 
             </div>
  <!-- END Current loged user Name -->
  
