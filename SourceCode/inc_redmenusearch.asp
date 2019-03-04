@@ -19,11 +19,11 @@
                  <div class="col-md-5 text-right sm-mb-0">
  
                      
-                  <a href="" class="text-white" data-toggle="modal" data-target="#myModalLogin"><%Response.Write(LangText("login","inc_header.asp"))%></a> | 
-                  <a href="" class="text-white"  data-toggle="modal" data-target="#myModalReg"><%Response.Write(LangText("clicktoregister","inc_header.asp"))%></a> | 
+                  <a href="" class="text-white" data-toggle="modal" data-target="#myModalLogin"><%Response.Write(LangText("login","inc_modal.asp"))%></a> | 
+                  <a href="" class="text-white"  data-toggle="modal" data-target="#myModalReg"><%Response.Write(LangText("clicktoregister","inc_modal.asp"))%></a> | 
 
-                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="פרסם מודעה בלוח דרושים">
-                    <a href="nid_adpageAddEdit.asp" class="text-white" >Publish an AD</a></button> 
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="<%Response.Write(LangText("publishanad","inc_modal.asp"))%>">
+                    <a href="nid_adpageAddEdit.asp" class="text-white" ><%Response.Write(LangText("publishanad","inc_modal.asp"))%></a></button> 
                       
                       </div>
 <!-- END login\register -->
@@ -34,9 +34,9 @@
     <div class="panel-title bg-theme-color-2"> <a class="collapsed" data-parent="#accordion1" data-toggle="collapse" href="#accordion12" aria-expanded="false"> <span class="open-sub"></span>+</a> </div>
     <div id="accordion12" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
       <div class="panel-content  bg-theme-color-2">
-        <p>ההרשמה בחינם !!</p>
+        <p><%Response.Write(LangText("registernow","inc_modal.asp"))%> !!</p>
           
-               <a href="" class="text-white"  >Hello User ~Fname~<br>LogOut</a> <br>
+               <a href="" class="text-white"  ><%Response.Write(LangText("hellouser","inc_modal.asp"))%> ~User Fname~<br><%Response.Write(LangText("logoutnow","inc_modal.asp"))%></a> <br>
           
                   <a href="" class="text-white" ><img src="images/flags/israel.png" width="10%" alt="עברית"  data-toggle="tooltip" data-placement="bottom" title="עברית"/> | </a> 
                 <a href="" class="text-white " ><img src="images/flags/UnitedStates.png" width="10%" alt="English"  data-toggle="tooltip" data-placement="bottom" title="English" /> | </a> 
