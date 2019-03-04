@@ -1,23 +1,24 @@
-<%'--START Modal REGISTRATION--%>
+<!--START Modal REGISTRATION-->
  <div class="modal fade" id="myModalReg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header  pt-0 pb-0">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h3 class="text-theme-colored mt-0 pt-5"><%=LangText("joinforfree","inc_modal.asp")%></h3>
+    <h3 class="text-theme-colored mt-0 pt-5"><%Response.Write(LangText("joinforfree","inc_modal.asp"))%></h3>
         </div>
         <div class="modal-body">
-<!--START Modal content REGISTRATION-->registeredentry
-    <p>נרשמתם כבר ? <a href="" title="ליחצו כאן לכניסה"  data-dismiss="modal"  data-toggle="modal" data-target="#myModalLogin" ><span class="text-theme-color-2">ליחצו כאן לכניסה</span></a></p>
+<!--START Modal content REGISTRATION-->
+    <p><%Response.Write(LangText("notregisteryet","inc_modal.asp"))%> <a href="" title="<%Response.Write(LangText("clickheretologin","inc_modal.asp"))%>"  data-dismiss="modal"  data-toggle="modal" data-target="#myModalLogin" ><span class="text-theme-color-2"><%Response.Write(LangText("clickheretologin","inc_modal.asp"))%></span></a></p>
     <hr />
-    <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">היכנסו באמצעות פייסבוק<i class="fa fa-facebook mr-20"></i></button>
+    <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">
+        <%Response.Write(LangText("loginfacebook","inc_modal.asp"))%><i class="fa fa-facebook mr-20"></i></button>
   
 <!-- START Seperetor-->
 <div class="separator separator-rouned  mb-10"> <i class="fa fa-cog"></i></div> 
 <!-- END Seperetor-->
  
         <div class="p-0 mb-0 text-center">
-            <p>או- הירשמו באמצעות כתובת מייל</p>
+            <p> <%Response.Write(LangText("or","inc_modal.asp"))%></p>
         <hr />
 
   <form id="job_apply_form" name="job_apply_form" action="includes/RUN PAGE" method="post" enctype="multipart/form-data">
@@ -25,33 +26,35 @@
      <div class="row text-center">               
           <div class="col-sm-6">
             <div class="form-group">
-              <label>משפחה או בייביסיטר <small>*</small></label>
+              <label><%Response.Write(LangText("giverornider","inc_modal.asp"))%><small>*</small></label>
               <select name="form_FoB" class="form-control required" >
-                <option value="nider">אנחנו משפחה</option>
-                <option value="giver">אני בייביסיטר</option>
+                <option value="nider"><%Response.Write(LangText("nider","inc_modal.asp"))%></option>
+                <option value="giver"><%Response.Write(LangText("giver","inc_modal.asp"))%></option>
               </select>
             </div>
           </div>
         <div class="col-sm-6">
             <div class="form-group">
-              <label>ישוב מגורים<small>*</small></label>
+              <label><%Response.Write(LangText("selectyourcity","inc_modal.asp"))%><small>*</small></label>
               <select name="form_city" class="form-control required" >
-                <option value="city1">עיר-1</option>
+<!-- START List of Cities-->
+                  <option value="city1">עיר-1</option>
                 <option value="city2">עיר-2</option>
-              </select>
+<!-- END List of Cities-->
+                  </select>
             </div>
           </div>
 
 
          <div class="col-sm-6">
             <div class="form-group">
-              <label>שם פרטי <small>*</small></label>
+              <label><%Response.Write(LangText("fname","inc_modal.asp"))%> <small>*</small></label>
               <input name="form_Fname" type="text" placeholder="שם פרטי" required="" class="form-control" />
             </div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
-              <label>שם משפחה <small>*</small></label>
+              <label><%Response.Write(LangText("lname","inc_modal.asp"))%> <small>*</small></label>
               <input name="form_Lname" type="text" placeholder="שם משפחה" required="" class="form-control" />
             </div>
           </div>
@@ -59,14 +62,14 @@
 
          <div class="col-sm-6">
             <div class="form-group">
-              <label>כתובת מייל <small>*</small></label>
-              <input name="form_email" class="form-control required email" type="email" placeholder="כתובת מייל" />
+              <label><%Response.Write(LangText("emailaddress","inc_modal.asp"))%><small>*</small></label>
+              <input name="form_email" class="form-control required email" type="email" placeholder="<%Response.Write(LangText("emailaddress","inc_modal.asp"))%>" />
             </div>
           </div>
         <div class="col-sm-6">
             <div class="form-group">
-              <label>סיסמה <small>*</small></label>
-              <input name="form_password" class="form-control required password" type="password" placeholder="סיסמה" />
+              <label><%Response.Write(LangText("password","inc_modal.asp"))%> <small>*</small></label>
+              <input name="form_password" class="form-control required password" type="password" placeholder="<%Response.Write(LangText("password","inc_modal.asp"))%>" />
             </div>
           </div>
   
@@ -75,13 +78,13 @@
         <div class="checkbox">
         <label>
         <input type="checkbox" value="1" />
-         אני מסכים ל<a href="termsandconditions.html" title="תנאי גלישה" target="_blank" class="font-weight-600">תנאי הגלישה</a> באתר ול<a href="privacy.html" title="תנאי פרטיות" target="_blank" class="font-weight-600">תנאי הפרטיות</a>
+         <a href="termsandconditions.html" title="<%Response.Write(LangText("bycreatinganaccount","inc_modal.asp"))%>" target="_blank" class="font-weight-600"><%Response.Write(LangText("bycreatinganaccount","inc_modal.asp"))%></a>  <a href="privacy.html" title="<%Response.Write(LangText("privacypolicy","inc_modal.asp"))%>" target="_blank" class="font-weight-600"><%Response.Write(LangText("privacypolicy","inc_modal.asp"))%></a>
         </label>
         </div>
 
         <div class="checkbox">
         <label>
-        <input type="checkbox" value="1" name="entConfirmMailRecieve" />מאשר קבלת מיילים ועדכונים מהאתר
+        <input type="checkbox" value="1" name="entConfirmMailRecieve" /><%Response.Write(LangText("iagreethetermsofthissite","inc_modal.asp"))%>
         </label>
         </div>
 
@@ -91,7 +94,8 @@
     <div class="form-group">
           <input name="form_botcheck" class="form-control" type="hidden" value="" />
 
-       <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">אישור והרשמה</button>
+       <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait..."><%Response.Write(LangText("confirmandsubmit","inc_modal.asp"))%>
+        </button>
    </div>
 
         </div>
