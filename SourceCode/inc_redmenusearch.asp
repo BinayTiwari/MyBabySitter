@@ -93,63 +93,63 @@
 
  <!-- Start Menu -->
  <nav id="menuzord-right" class="menuzord default">
-    <a class="menuzord-brand pull-left flip mb-15" href="/"><img src="tmp_images/logo.png" alt="" /></a>
+    <a class="menuzord-brand pull-left flip mb-15" href="/"><img src="tmp_images/logo.png" alt="<%Response.Write(LangText("mybabysittersitename","inc_redmenusearch.asp"))%>" /></a>
     <ul class="menuzord-menu">
-      <li class="active"><a href="default.asp">Home</a></li>
+      <li class="active"><a href="default.asp"><%Response.Write(LangText("lngHomePage","inc_redmenusearch.asp"))%></a></li>
 
-      <li><a href="#">Givers</a>
+      <li><a href="#"><%Response.Write(LangText("babysitter","inc_redmenusearch.asp"))%></a>
         <ul class="dropdown">
-          <li><a href="giv_giverprofile.asp">giverprofile</a></li>
-          <li><a href="giv_giverprofileAddEdit.asp">giverprofileAddEdit</a></li>
-          <li><a href="nid_adsearchresult.asp">adsearchresult</a></li>
-          <li><a href="giv_giverprofile.asp#MyAds">MyAds</a></li>
-          <li><a href="givnid_recommendations.asp">recommendations</a></li>
-          <li><a href="">שירותים</a>
+          <li><a href="giv_giverprofile.asp"><%Response.Write(LangText("GiverProfile","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="giv_giverprofileAddEdit.asp"><%Response.Write(LangText("giveredit","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="nid_adsearchresult.asp"><%Response.Write(LangText("ads","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="giv_giverprofile.asp#MyAds"><%Response.Write(LangText("myads","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="givnid_recommendations.asp"><%Response.Write(LangText("mngreccommands","inc_redmenusearch.asp"))%></a></li>
+          <li><a href=""><%Response.Write(LangText("services","inc_redmenusearch.asp"))%></a>
             <ul class="dropdown">
-              <li><a href="givnid_whowatchme.asp">Who is watch me</a></li>
-              <li><a href="giv_membershipplans.asp">giv_membershipplans</a></li>
+              <li><a href="givnid_whowatchme.asp"><%Response.Write(LangText("whowatchme","inc_redmenusearch.asp"))%></a></li>
+              <li><a href="giv_membershipplans.asp"><%Response.Write(LangText("givmembershipplans","inc_redmenusearch.asp"))%></a></li>
             </ul>
           </li>
-          <li><a href="givnid_infocenter.asp?ContentID=1">infocenter Giver</a></li>
+          <li><a href="givnid_infocenter.asp?ContentID=1"><%Response.Write(LangText("babysitterinfo","inc_redmenusearch.asp"))%></a></li>
      </ul>
     </li>
 
-      <li><a href="#">Niders</a>
+      <li><a href="#"><%Response.Write(LangText("families","inc_redmenusearch.asp"))%></a>
         <ul class="dropdown">
-          <li><a href="nid_niderprofile.asp">nid_niderprofile</a></li>
-           <li><a href="nid_niderprofileAddEdit.asp">niderprofileAddEdit</a></li>
-         <li><a href="nid_membershipplans.asp">nid_membershipplans</a></li>
-          <li><a href="givnid_services.asp">services</a>
+          <li><a href="nid_niderprofile.asp"><%Response.Write(LangText("niderprofile","inc_redmenusearch.asp"))%></a></li>
+           <li><a href="nid_niderprofileAddEdit.asp"><%Response.Write(LangText("nideredit","inc_redmenusearch.asp"))%></a></li>
+         <li><a href="nid_membershipplans.asp"><%Response.Write(LangText("nidmembershipplans","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="givnid_services.asp"><%Response.Write(LangText("services","inc_redmenusearch.asp"))%></a>
             <ul class="dropdown">
-              <li><a href="givnid_whowatchme.asp">Who is watch me</a></li>
-              <li><a href="promooptions.asp">Promo Options</a></li>
+              <li><a href="givnid_whowatchme.asp"><%Response.Write(LangText("whowatchme","inc_redmenusearch.asp"))%></a></li>
+              <li><a href="promooptions.asp"><%Response.Write(LangText("somthing","inc_redmenusearch.asp"))%></a></li>
             </ul>
           </li>
-          <li><a href="giv_searchresult.asp">giv_searchresult</a></li>
-          <li><a href="giv_searchresult.asp?myList">myList</a></li>
-          <li><a href="givnid_infocenter.asp?ContentID=2">infocenter Nider</a></li>
+          <li><a href="giv_searchresult.asp"><%Response.Write(LangText("givsearchresult","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="giv_searchresult.asp?myList"><%Response.Write(LangText("mywishlist","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="givnid_infocenter.asp?ContentID=2"><%Response.Write(LangText("parentinfocenter","inc_redmenusearch.asp"))%></a></li>
         </ul>
       </li>
 
-      <li><a href="default.asp#howitwork">howitwork</a></li>
+      <li><a href="default.asp#howitwork"><%Response.Write(LangText("howdoseitwork","inc_redmenusearch.asp"))%></a></li>
 
-      <li><a href="#">About Us</a>
+      <li><a href="#"><%Response.Write(LangText("about","inc_redmenusearch.asp"))%></a>
         <ul class="dropdown">
-          <li><a href="givnid_infocenter.asp?ArticalID=3">About Us</a></li>
-          <li><a href="givnid_infocenter.asp?ArticalID=4">Date Secure</a></li>
-          <li><a href="givnid_infocenter.asp?ArticalID=5">terms</a></li>
-          <li><a href="givnid_infocenter.asp?ArticalID=6">Privecy Policy</a></li>
-          <li><a href="givnid_infocenter.asp?ArticalID=6">Accessability</a></li>
+          <li><a href="givnid_infocenter.asp?ArticalID=3"><%Response.Write(LangText("about","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="givnid_infocenter.asp?ArticalID=4"><%Response.Write(LangText("infosecurity","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="givnid_infocenter.asp?ArticalID=5"><%Response.Write(LangText("termsofuse","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="givnid_infocenter.asp?ArticalID=6"><%Response.Write(LangText("privecy","inc_redmenusearch.asp"))%> </a></li>
+          <li><a href="givnid_infocenter.asp?ArticalID=6"><%Response.Write(LangText("accessability","inc_redmenusearch.asp"))%> </a></li>
         </ul>
     </li>
     
-      <li><a href="#">CustomerService</a>
+      <li><a href="#"><%Response.Write(LangText("support","inc_redmenusearch.asp"))%></a>
         <ul class="dropdown">
-          <li><a href="" class="" data-toggle="modal" data-target="#myModalcustomerrelations">CustomerService</a></li>
-          <li><a href="givnid_infocenterFaq.asp">FAQ</a></li>
-          <li><a href="givnid_infocenter.asp?conViewEnttyTypr=2">Givers Info</a></li>
-          <li><a href="givnid_infocenter.asp?conViewEnttyTypr=3">Nider Info</a></li>
-          <li><a href="givnid_infocenter.asp?conContentTypr=help">Help</a></li>
+          <li><a href="" class="" data-toggle="modal" data-target="#myModalcustomerrelations"><%Response.Write(LangText("customerservice","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="givnid_infocenterFaq.asp"><%Response.Write(LangText("faq","inc_redmenusearch.asp"))%></a></li>
+          <li><a href="givnid_infocenter.asp?conViewEnttyTypr=2"><%Response.Write(LangText("babysitterinfo","inc_redmenusearch.asp"))%> </a></li>
+          <li><a href="givnid_infocenter.asp?conViewEnttyTypr=3"><%Response.Write(LangText("familiesinfo","inc_redmenusearch.asp"))%> </a></li>
+          <li><a href="givnid_infocenter.asp?conContentTypr=help"><%Response.Write(LangText("help","inc_redmenusearch.asp"))%></a></li>
         </ul>
       </li>
 
@@ -173,15 +173,17 @@
   
     <form class="form-inline">
       <div class="form-group">
-        <label for="jobType">Search:</label>
+        <label for="jobType"><%Response.Write(LangText("search","inc_redmenusearch.asp"))%></label>
 
         <select class="form-control" id="jobType" >
-          <option>babysitter</option>
+<!-- START: List of active Job Type -->
+         <option>babysitter</option>
           <option>Oper</option>
           <option>caregiver</option>
+ <!-- END: List of active Job Type -->
           <option>--------</option>
-          <option>ADS</option>
-        </select>
+          <option>ADS</option><!-- Go to ads list -->
+       </select>
 
       </div>
       
@@ -190,7 +192,8 @@
 
         <select class="form-control" id="Area" >
           <option>All Areas</option>
-          <option>North</option>
+ <!-- START: List of areas Job Type -->
+         <option>North</option>
           <option>דרום</option>
           <option>שפלה</option>
           <option>שרון</option>
