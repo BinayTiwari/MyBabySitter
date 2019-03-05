@@ -810,7 +810,7 @@ https://codepen.io/Bilal-alshame/pen/MbxYjN
 -->      
       
   <div class="modal fade" id="myModalCitySearch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog col-sm-8" role="document">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -852,7 +852,7 @@ https://codepen.io/Bilal-alshame/pen/MbxYjN
                       <input name="form_botcheck" class="form-control" type="hidden" value="" />
                           
                           
-                   <button type="submit" class="btn col-sm-8 font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">Select your City</button>
+                   <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">Select your City</button>
                           
                     </div>
                   </form>
