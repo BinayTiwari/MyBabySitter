@@ -826,7 +826,7 @@ https://codepen.io/Bilal-alshame/pen/MbxYjN
 
  
                       <div class="row">               
-                     <div class="col-sm-8">
+                     <div class="col-sm-12">
                         <div class="form-group">
                           <input name="form_city" class="form-control" type="text" placeholder="write your city name" />
                         </div>
@@ -834,7 +834,7 @@ https://codepen.io/Bilal-alshame/pen/MbxYjN
                   </div>
 
                      <div class="row">               
-                    <div class="col-sm-8">
+                    <div class="col-sm-12">
                         <div class="form-group">
                           <label>Cities  </label>
                  <select multiple class="form-control">
