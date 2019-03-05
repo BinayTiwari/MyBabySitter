@@ -725,6 +725,81 @@
       </div>
      </div>
     </div>
-<%'!--END Modal invite--%>
+<!--END Modal invite-->
 
 
+                   
+<!--START Modal AreaByCity   -->
+<!--SAMPLES:
+https://codepen.io/Bilal-alshame/pen/MbxYjN
+-->      
+      
+  <div class="modal fade" id="myModalAreaByCity" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h3 class="text-theme-colored mt-0 pt-5"> Select Area By City</h3>
+        </div>
+        <div class="modal-body">
+<!--START Modal content AreaByCity-->
+               <div class="p-0 mb-0 text-center">
+                    <p>Write your city name and discover the area</p>
+                 <hr />
+
+                   <form id="job_apply_form" name="job_apply_form" action="includes/job.php" method="post" enctype="multipart/form-data">
+
+ 
+                      <div class="row">               
+                     <div class="col-sm-12">
+                        <div class="form-group">
+                          <input name="form_email" class="form-control required email" type="email" placeholder="שם העיר" />
+                        </div>
+                      </div>
+                  </div>
+
+                     <div class="row">               
+                     <div class="col-sm-6">
+                         
+                        <div class="form-group">
+                          <label>Area </label>
+                  <select multiple class="form-control">
+                    <option>Area1</option>
+                    <option>Area2</option>
+                    <option>Area3</option>
+                    <option>Area4</option>
+                    <option>Area5</option>
+                  </select>
+                        </div>
+                      </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Cities In Area </label>
+                 <select multiple class="form-control">
+                    <option>City-1_Area1</option>
+                    <option>City-2_Area1</option>
+                    <option>City-3_Area1</option>
+                    <option>City-4_Area1</option>
+                    <option>City-5_Area1</option>
+                  </select>
+                        </div>
+                      </div>
+                 </div>
+
+                      <div class="form-group">
+                      <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                          
+                          
+                   <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">Select Area By City</button>
+                          
+                    </div>
+                  </form>
+            
+       </div>
+      </div>
+     </div>
+    </div>
+</div>
+<!--END Modal AreaCitySelect-->  
+    
+    

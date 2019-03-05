@@ -188,7 +188,7 @@
       </div>
       
       <div class="form-group mr-10">  
-        <label for="Area">AREA:</label>
+        <label for="Area"><a href="" class="text-white" data-toggle="modal" data-target="#myModalAreaByCity">AREA:</a></label>
 
         <select class="form-control" id="Area" >
           <option>All Areas</option>
