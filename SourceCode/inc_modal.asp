@@ -753,7 +753,7 @@ https://codepen.io/Bilal-alshame/pen/MbxYjN
                       <div class="row">               
                      <div class="col-sm-12">
                         <div class="form-group">
-                          <input name="form_email" class="form-control required email" type="email" placeholder="שם העיר" />
+                          <input name="form_email" class="form-control required email" type="email" placeholder="write your city name" />
                         </div>
                       </div>
                   </div>
@@ -801,5 +801,67 @@ https://codepen.io/Bilal-alshame/pen/MbxYjN
     </div>
 </div>
 <!--END Modal AreaCitySelect-->  
+    
+    
+                  
+<!--START Modal CitySearch   -->
+<!--SAMPLES:
+https://codepen.io/Bilal-alshame/pen/MbxYjN
+-->      
+      
+  <div class="modal fade" id="myModalCitySearch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h3 class="text-theme-colored mt-0 pt-5"> City Search</h3>
+        </div>
+        <div class="modal-body">
+<!--START Modal content CitySearch-->
+               <div class="p-0 mb-0 text-center">
+                    <p>Write your city name and select it</p>
+                 <hr />
+
+                   <form id="job_apply_form" name="job_apply_form" action="includes/job.php" method="post" enctype="multipart/form-data">
+
+ 
+                      <div class="row">               
+                     <div class="col-sm-12">
+                        <div class="form-group">
+                          <input name="form_email" class="form-control required email" type="email" placeholder="write your city name" />
+                        </div>
+                      </div>
+                  </div>
+
+                     <div class="row">               
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                          <label>Cities  </label>
+                 <select multiple class="form-control">
+                    <option>City-1</option>
+                    <option>City-2</option>
+                    <option>City-3</option>
+                    <option>City-4</option>
+                    <option>City-5</option>
+                  </select>
+                        </div>
+                      </div>
+                 </div>
+
+                      <div class="form-group">
+                      <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                          
+                          
+                   <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">Select your City</button>
+                          
+                    </div>
+                  </form>
+            
+       </div>
+      </div>
+     </div>
+    </div>
+</div>
+<!--END Modal CitySearch-->  
     
     

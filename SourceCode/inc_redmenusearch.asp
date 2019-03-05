@@ -194,24 +194,16 @@
           <option>All Areas</option>
  <!-- START: List of areas Job Type -->
          <option>North</option>
-          <option>דרום</option>
-          <option>שפלה</option>
-          <option>שרון</option>
-          <option>ירושלים</option>
         </select>
 
       </div>
 
   <div class="form-group mr-10">  
-    <label for="city">CITY:</label>  <!-- city filtered by area.  IF area selected: AllAreas than show all active cities -->
+    <label for="city"><a href="" class="text-white" data-toggle="modal" data-target="#myModalCitySearch">CITY:</a></label>  <!-- city filtered by area.  IF area selected: AllAreas than show all active cities -->
 
     <select class="form-control" id="city" >
       <option>TelAviv</option>
-      <option>Jerusalem</option>
-      <option>חיפה</option>
-      <option>גדרה</option>
-      <option>חדרה</option>
-    </select>
+     </select>
 
   </div>
 
