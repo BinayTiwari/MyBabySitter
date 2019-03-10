@@ -115,15 +115,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h3 class="text-theme-colored mt-0 pt-5"> כניסה </h3>
+    <h3 class="text-theme-colored mt-0 pt-5"> <%Response.Write(LangText("registeredentry","inc_modal.asp"))%> </h3>
         </div>
         <div class="modal-body">
 <!--START Modal content LOGIN-->
 
-            <p>עדיין לא נרשמתם ? <a href="" title="ליחצו כאן להרשמה" data-dismiss="modal"  data-toggle="modal" data-target="#myModalReg"><span class="text-theme-color-2  ">ליחצו כאן להרשמה</span></a></p>
+            <p><%Response.Write(LangText("notregisteryet","inc_modal.asp"))%> <a href="" title="<%Response.Write(LangText("clicktoregister","inc_modal.asp"))%>" data-dismiss="modal"  data-toggle="modal" data-target="#myModalReg"><span class="text-theme-color-2  "> <%Response.Write(LangText("clicktoregister","inc_modal.asp"))%></span></a></p>
          <hr />
  
-                    <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">היכנסו באמצעות פייסבוק<i class="fa fa-facebook mr-20"></i></button>
+                    <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait..."><%Response.Write(LangText("loginfacebook","inc_modal.asp"))%><i class="fa fa-facebook mr-20"></i></button>
                     
   
 <!-- START Seperetor-->
@@ -131,7 +131,7 @@
 <!-- END Seperetor-->
                     
                <div class="p-0 mb-0 text-center">
-                    <p>או- היכנסו     באמצעות כתובת מייל</p>
+                    <p><%Response.Write(LangText("or","inc_modal.asp"))%></p>
                  <hr />
                     
                      
@@ -144,15 +144,15 @@
                       <div class="row">               
                      <div class="col-sm-6">
                         <div class="form-group">
-                          <label>כתובת מייל </label>
-                          <input name="form_email" class="form-control required email" type="email" placeholder="כתובת מייל" />
+                          <label><%Response.Write(LangText("emailaddress","inc_modal.asp"))%> </label>
+                          <input name="form_email" class="form-control required email" type="email" placeholder="<%Response.Write(LangText("emailaddress","inc_modal.asp"))%>" />
                         </div>
                       </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                          <label>סיסמה </label>
-                          <input name="form_password" class="form-control required password" type="password" placeholder="סיסמה" />
-                        <label><a href=""  data-dismiss="modal"  data-toggle="modal" data-target="#myModallostpassword" title="שכחתי סיסמה" >שכחתי את הסיסמה
+                          <label><%Response.Write(LangText("password","inc_modal.asp"))%> </label>
+                          <input name="form_password" class="form-control required password" type="password" placeholder="<%Response.Write(LangText("password","inc_modal.asp"))%>" />
+                        <label><a href=""  data-dismiss="modal"  data-toggle="modal" data-target="#myModallostpassword" title="<%Response.Write(LangText("forgetyourpassword","inc_modal.asp"))%>" ><%Response.Write(LangText("forgetyourpassword","inc_modal.asp"))%>
                             </a></label>
                         </div>
                       </div>
@@ -168,7 +168,7 @@
 
         <div class="checkbox">
         <label>
-        <input type="checkbox" value="1" />זכור אותי במחשב זה
+        <input type="checkbox" value="1" /><%Response.Write(LangText("rememberme","inc_modal.asp"))%>
         </label>
         </div>
 
@@ -180,7 +180,7 @@
                       <input name="form_botcheck" class="form-control" type="hidden" value="" />
                           
                           
-                   <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">כניסה</button>
+                   <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait..."><%Response.Write(LangText("registeredentry","inc_modal.asp"))%></button>
                           
                     </div>
                   </form>
@@ -200,7 +200,7 @@
         <div class="modal-header">
 
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h3 class="text-theme-colored mt-0 pt-5"> איפוס סיסמה </h3>
+    <h3 class="text-theme-colored mt-0 pt-5"><%Response.Write(LangText("renewpassword","inc_modal.asp"))%>  </h3>
         </div>
         <div class="modal-body">
 <!--START Modal content LOSTPASSWORD-->
@@ -210,7 +210,7 @@
 <!-- END Seperetor-->
                     
                <div class="p-0 mb-0 text-center">
-                    <p>יש לרשום את כתובת המייל עימה נרשמתם</p>
+                    <p><%Response.Write(LangText("writeemail","inc_modal.asp"))%></p>
                  <hr />
                     
                     <form id="job_apply_form" name="job_apply_form" action="includes/job.php" method="post" enctype="multipart/form-data">
@@ -219,8 +219,8 @@
                   <div class="row">               
                      <div class="col-sm-6">
                         <div class="form-group">
-                          <p class="text-right">כתובת מייל </p>
-                          <input name="form_email" class="form-control required email" type="email" placeholder="כתובת מייל" />
+                          <p class="text-right"><%Response.Write(LangText("enteryouremaile","inc_modal.asp"))%> </p>
+                          <input name="form_email" class="form-control required email" type="email" placeholder="<%Response.Write(LangText("enteryouremaile","inc_modal.asp"))%>" />
                         </div>
                       </div>
                    </div>
@@ -231,9 +231,9 @@
                       <input name="form_botcheck" class="form-control" type="hidden" value="" />
                           
    
-                   <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10"  data-dismiss="modal"  data-toggle="modal" data-target="#myModalconfirmrestpassword" title="סגור">איפוס סיסמה</button>
+                   <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10"  data-dismiss="modal"  data-toggle="modal" data-target="#myModalconfirmrestpassword" title="<%Response.Write(LangText("close","inc_modal.asp"))%>"> <%Response.Write(LangText("renewpassword","inc_modal.asp"))%></button>
    
-<p class="font-12 mt-5">אם אינכם מצליחים לאפס הסיסמה, פנו אלינו באמצעות <a href="#" class="" data-dismiss="modal"  data-toggle="modal" data-target="#myModalcustomerrelations"><span class="text-theme-color-2">צור קשר</span> 
+<p class="font-12 mt-5"><%Response.Write(LangText("ifnosuccesstoresetpassword","inc_modal.asp"))%> <a href="#" class="" data-dismiss="modal"  data-toggle="modal" data-target="#myModalcustomerrelations"><span class="text-theme-color-2"><%Response.Write(LangText("contactus","inc_modal.asp"))%></span> 
 </a></p>
             
             </div>
@@ -263,14 +263,14 @@
 <!-- END Seperetor-->
                     
                <div class="p-0 mb-0 text-center">
-                    <p>ברגעים אלו נשלח אליך קישור במייל לאיפוס סיסמה</p>
+                    <p><%Response.Write(LangText("wesentnowemail","inc_modal.asp"))%></p>
  		        </div>
 
    		<div class="modal-body">
 <!--START Modal content CONFIRM RESET PASSWORD-->
                    
                            
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">סגור<span aria-hidden="true">&times;</span></button>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><%Response.Write(LangText("close","inc_modal.asp"))%><span aria-hidden="true">&times;</span></button>
             <hr />
             </div>
        </div>
@@ -292,7 +292,7 @@
         <div class="modal-header">
 
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h3 class="text-theme-colored mt-0 pt-5"> חידוש סיסמה </h3>
+    <h3 class="text-theme-colored mt-0 pt-5"><%Response.Write(LangText("renewpassword","inc_modal.asp"))%>  </h3>
         </div>
         <div class="modal-body">
 <!--START Modal content RESETPASSWORD-->
@@ -302,7 +302,7 @@
 <!-- END Seperetor-->
                     
                <div class="p-0 mb-0 text-center">
-                    <p>יש לרשום את הסיסמה פעמיים</p>
+                    <p><%Response.Write(LangText("writeyourpasswordtwice","inc_modal.asp"))%></p>
                  <hr />
                     
                     <form id="job_apply_form" name="job_apply_form" action="includes/job.php" method="post" enctype="multipart/form-data">
@@ -311,7 +311,7 @@
                   <div class="row">               
                      <div class="col-sm-6">
                         <div class="form-group">
-                          <p class="text-right">סיסמה <small>*</small></p>
+                          <p class="text-right"><%Response.Write(LangText("password","inc_modal.asp"))%> <small>*</small></p>
                           <input name="form_password1" class="form-control required password" type="password" placeholder="password1" />
                         </div>
                       </div>
@@ -320,7 +320,7 @@
                  <div class="row">               
                      <div class="col-sm-6">
                         <div class="form-group">
-                          <p class="text-right">סיסמה <small>*</small></p>
+                          <p class="text-right"><%Response.Write(LangText("password","inc_modal.asp"))%> <small>*</small></p>
                           <input name="form_password2" class="form-control required password" type="password" placeholder="password2" />
                         </div>
                       </div>
@@ -332,10 +332,12 @@
                       <input name="form_botcheck" class="form-control" type="hidden" value="" />
                           
                           
-                   <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">חידוש סיסמה</button>
-<p class="font-12 mt-5">אם אינכם מצליחים לאפס הסיסמה, פנו אלינו באמצעות <a href="#" class="" data-dismiss="modal"  data-toggle="modal" data-target="#myModalcustomerrelations"><span class="text-theme-color-2">צור קשר</span> 
+                   <button type="submit" class="btn font-20 text-white btn-block btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait..."><%Response.Write(LangText("renewpassword","inc_modal.asp"))%></button>
+<p class="font-12 mt-5"><%Response.Write(LangText("ifnosuccesstoresetpassword","inc_modal.asp"))%> <a href="#" class="" data-dismiss="modal"  data-toggle="modal" data-target="#myModalcustomerrelations"><span class="text-theme-color-2"><%Response.Write(LangText("contactus","inc_modal.asp"))%></span> 
 </a></p>
-            
+                       
+                       
+                       
             </div>
           </form>
            
@@ -361,14 +363,14 @@
 <!-- END Seperetor-->
                     
                <div class="p-0 mb-0 text-center">
-                    <p>התשלום בתהליך....</p>
+                    <p><%Response.Write(LangText("paymentinprocess","inc_modal.asp"))%></p>
  		        </div>
 
    		<div class="modal-body">
 <!--START Modal content CONFIRM RESET PASSWORD-->
                    
                            
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">סגור<span aria-hidden="true">&times;</span></button>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><%Response.Write(LangText("close","inc_modal.asp"))%><span aria-hidden="true">&times;</span></button>
             <hr />
             </div>
        </div>
@@ -386,8 +388,8 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h3 class="text-theme-colored mt-0 pt-5"> כתיבת המלצה </h3>
-                   <p>באפשרותכם, לרשום המלצה, להוסיף דירוג, ולהעלות מכתב המלצה</p>
+    <h3 class="text-theme-colored mt-0 pt-5"><%Response.Write(LangText("writerecommendation","inc_modal.asp"))%>  </h3>
+                   <p><%Response.Write(LangText("youcanwrite","inc_modal.asp"))%></p>
         </div>
         <div class="modal-body">
 <!--START Modal content Recommend-->
@@ -397,18 +399,18 @@
         
             <div class="row">
                 <div class="form-group col-md-6">
-                  <label>שם</label>
+                  <label><%Response.Write(LangText("name","inc_modal.asp"))%></label>
                   <input type="text" id="enttyID" class="form-control" />
                 </div>
                 
                 <div class="form-group col-md-6">
-                  <label>קירבה</label>
+                  <label><%Response.Write(LangText("relativity","inc_modal.asp"))%></label>
                  <select class="form-control" id="Relativity" >
-                  <option>עבדה אצלנו</option>
-                  <option>משפחה</option>
-                  <option>חברים</option>
-                  <option>שמעתי מ...</option>
-                  <option>אחר...</option>
+                  <option><%Response.Write(LangText("workbefore","inc_modal.asp"))%></option>
+                  <option><%Response.Write(LangText("relativity","inc_modal.asp"))%>משפחה</option>
+                  <option><%Response.Write(LangText("relativity","inc_modal.asp"))%>חברים</option>
+                  <option><%Response.Write(LangText("relativity","inc_modal.asp"))%>שמעתי מ...</option>
+                  <option><%Response.Write(LangText("relativity","inc_modal.asp"))%>אחר...</option>
                 </select>
                             
                 </div>
