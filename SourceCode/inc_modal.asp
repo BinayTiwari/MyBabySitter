@@ -38,7 +38,7 @@
               <label><%Response.Write(LangText("selectyourcity","inc_modal.asp"))%><small>*</small></label>
               <select name="form_city" class="form-control required" >
 <!-- START List of Cities-->
-                  <option value="city1">עיר-1</option>
+                  <option value="city1">city1</option>
                 <option value="city2">עיר-2</option>
 <!-- END List of Cities-->
                   </select>
@@ -49,13 +49,13 @@
          <div class="col-sm-6">
             <div class="form-group">
               <label><%Response.Write(LangText("fname","inc_modal.asp"))%> <small>*</small></label>
-              <input name="form_Fname" type="text" placeholder="שם פרטי" required="" class="form-control" />
+              <input name="form_Fname" type="text" placeholder="<%Response.Write(LangText("fname","inc_modal.asp"))%>" required="" class="form-control" />
             </div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
               <label><%Response.Write(LangText("lname","inc_modal.asp"))%> <small>*</small></label>
-              <input name="form_Lname" type="text" placeholder="שם משפחה" required="" class="form-control" />
+              <input name="form_Lname" type="text" placeholder="<%Response.Write(LangText("lname","inc_modal.asp"))%>" required="" class="form-control" />
             </div>
           </div>
  
